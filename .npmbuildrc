@@ -1,0 +1,13 @@
+{
+	"translatorTextKey": "",
+	"supportedLocales": [],
+	"liferayDir": "D:\\Liferay\\Server\\liferay-dxp-7.2.10.6-sp6\\",
+	"webpack": {
+		"rules": [
+			{
+				"test": "src\\\\.*\\.js$",
+				"use": "babel-loader"
+			}
+		]
+	}
+}
