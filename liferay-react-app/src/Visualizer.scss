@@ -1,0 +1,237 @@
+.Visualizer {
+	width: 400px;
+	margin: auto;
+	border: 1px solid #D5D5D4;
+	padding-bottom: 24px;
+	max-width: 100%;
+
+	a {
+		text-decoration: underline;
+	}
+
+	.weeks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+
+		.btn {
+			border-radius: 0;
+			background-color: #fff;
+			border: 1px solid #D5D5D4;
+			color: #2E2D29;
+			font-size: 10px;
+			width: 56px;
+			padding: 6px 5px;
+
+			&.active {
+				background-color: #D5D5D4;
+				color: #2E2D29;
+				border: 1px solid #D5D5D4;
+				opacity: 1;
+			}
+		}
+	}
+
+	.viz_cal {
+		.event {
+			background-color: #A3E3FF;
+			border-radius: 2px;
+			width: 67px;
+			height: 61px;
+			position: relative;
+			padding: 6px;
+			cursor: pointer;
+			border: 1.5px solid #fff;
+			font-size: 9px;
+			text-align: left;
+			color: #2E2D29;
+			max-width: 100%;
+
+			&:hover {
+				border: 1.5px solid #00548F;
+				box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.20), 0px 0px 10px 0px rgba(0, 40, 68, 0.40);
+			}
+
+			img {
+				position: absolute;
+				right: 5px;
+				bottom: 5px;
+			}
+
+			&.Enrolled {
+				background-color: #7CDB06;
+			}
+
+			&.Conflict {
+				background-color: #BB2625;
+			}
+
+			&.Planned {
+				background-color: #F3A83B;
+			}
+
+			&.CoreArea1 {
+				background-color: #F073F2;
+			}
+
+			&.CoreArea2 {
+				background-color: #FF9A9A;
+			}
+
+			&.CoreArea3 {
+				background-color: #7094FF;
+			}
+
+			&.CoreArea4 {
+				background-color: #A688E7;
+			}
+
+			&.CoreArea5 {
+				background-color: #CAAD7D;
+			}
+
+			&.CoreArea6 {
+				background-color: #4FCAFF;
+			}
+
+			&.CoreArea7 {
+				background-color: #FFE600;
+			}
+
+			&.CoreArea8 {
+				background-color: #FEB0FF;
+			}
+
+			&.CoreArea9 {
+				background-color: #99B3FF;
+			}
+
+			&.CoreArea10 {
+				background-color: #A3E3FF;
+			}
+		}
+
+		table {
+			&.cal {
+				width: 100%;
+				color: #585754;
+				font-size: 9px;
+				border-collapse: collapse;
+
+				tr {
+					&:first-child {
+						td {
+							border: none;
+							font-weight: 600;
+							height: 20px;
+							text-align: center;
+						}
+					}
+				}
+
+				td {
+					border: 1px solid #D5D5D4;
+					width: 68px;
+					height: 40px;
+					vertical-align: top;
+
+					&:first-child {
+						border: none;
+						width: 30px;
+					}
+				}
+
+				.btn {
+					color: #585754;
+					font-size: 9px;
+					background-color: transparent;
+					padding: 0;
+					border-color: #fff;
+				}
+			}
+		}
+	}
+
+	.weeks {
+		.btn {
+			&.active {
+				&:hover {
+					background-color: #00548F;
+					border-color: #00548F;
+					color: #fff;
+				}
+			}
+
+			&:hover {
+				background-color: #00548F;
+				border-color: #00548F;
+				color: #fff;
+			}
+		}
+	}
+
+	.Legends {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 5px;
+		padding-top: 16px;
+		margin-bottom: 16px;
+
+		&.col {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: -10px;
+		}
+
+		.box {
+			border-radius: 2px;
+			padding: 2px 4px;
+			font-size: 12px;
+			line-height: normal;
+		}
+
+		.text-2 {
+			font-size: 11px;
+		}
+	}
+
+	.Enrolled {
+		background-color: #7CDB06;
+	}
+
+	.Conflict {
+		background-color: #BB2625;
+		color: #fff;
+	}
+
+	.LegendIcons {
+		padding: 6px;
+		width: 24px;
+		height: 24px;
+		line-height: 10px;
+	}
+
+	.LegendIcons img {
+		width: 12px;
+	}
+
+	
+
+}
+
+.clay-tooltip-top {
+	.tooltip-inner {
+		background-color: #fff;
+		color: #585754;
+		max-width: 180px;
+		padding: 8px 12px;
+		border-radius: 8px;
+		border: 1px solid #D5D5D4;
+	}
+}
+.clay-tooltip-top .arrow::before,
+.clay-tooltip-top-left .arrow::before,
+.clay-tooltip-top-right .arrow::before {
+	border-top-color: #D5D5D4 !important;
+}

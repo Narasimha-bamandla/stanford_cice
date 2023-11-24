@@ -1,0 +1,238 @@
+.core-course-area {
+	display: flex;
+	width: 840px;
+	padding: 20px 0px 16px 0px;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	border: 1px solid #D5D5D4;
+	background: #F7F7F7;
+	& > .header {
+		display: flex;
+		padding: 0px 20px;
+		align-items: flex-start;
+		gap: 20px;
+		align-self: stretch;
+		width: 100%;
+	}
+	.header {
+		.title {
+			color: #2E2D29;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 24px;
+			width: 300px;
+		}
+		.text-lbl {
+			label {
+				color: #585754;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 120%; 
+			}
+			strong {
+				margin-right: 8px;
+				font-weight: 600;
+			}
+		}
+		.sort-toggle {
+			display: flex;
+		}
+	}
+	.dropdown {
+		width: 176px;
+	}
+	.dropdown-toggle {
+		justify-content: center;
+		display: flex;
+		text-align: left;
+		align-items: center;
+		.text {
+			overflow: hidden;
+			width: 130px;
+			text-overflow: ellipsis;
+			display: inline-block;
+		}
+	}
+	.content {
+		display: flex;
+		margin: 0px 12px;
+		flex-direction: column;
+		align-items: flex-start;
+		align-self: stretch;
+		background-color: #fff;
+		.instr-links {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap;
+			span {
+				display: flex;
+				gap: 6px;
+				flex-wrap: wrap;
+				&:first-of-type {
+					.vline {
+						display: none;
+					}
+				}
+			}
+			a {
+				font-size: 14px;
+				color: #2E2D29;
+				&:hover {
+					text-decoration: underline;
+					color: #00548F;
+				}
+			}
+		}
+		.dwt {
+			display: flex;
+			gap: 6px;
+			.vline {
+				height: 32px;
+			}
+		}
+		.rating {
+			display: flex;
+			gap: 4px;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		 .vline {
+			border-left: 1px solid #D5D5D4;
+			height: 16px;
+		  }
+		  
+    .disclaimer {
+      display: flex;
+      padding: 8px 12px;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      border: 1px solid #D5D5D4;
+      background: #F7F7F7;
+      color: #2E2D29;
+      margin-top: 12px;
+      a {
+        color: #8C1515;
+        font-weight: 600;
+        &:hover {
+          text-decoration: none;
+          color: #00548F;
+        }
+      }
+    }
+    
+		.tabs {
+			display: flex;
+			align-items: flex-start;
+			flex: 1 0 0;
+			width: 100%;
+			margin-bottom: 18px;
+			.btn {
+				border-style: none none solid none;
+				border-width: 2px;
+				border-color: #D5D5D4;
+				width: -webkit-fill-available;
+				text-align: left;
+				color: #585754;
+				padding: 6px 16px;
+				background: transparent;
+				font-weight: 600;
+				line-height: 24px;
+				font-size: 16px;
+				span {
+					background: #FFE6E2;
+					padding: 3px 6px;
+					color: #8C1515;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 16px;
+				}
+				&.active {
+					border-style: none none solid none;
+					border-color: #8C1515;
+					color: #8C1515;
+				}
+			}
+		}
+		.tabs-content {
+			width: 100%;
+		}
+	}
+	hr {
+		border-bottom: 1px solid #D5D5D4;
+		margin: 16px 20px 16px 20px;
+		display: block;
+		width: calc(100% - 40px);
+	}
+  .course-sec {
+    padding: 0;
+    padding-left: 20px;
+    border-left: 4px solid #FF9A9A;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 0;
+    padding-left: 20px;
+    border-left: 4px solid transparent; 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-self: stretch;
+      .course-name {
+        margin-top: 8px;
+        }
+        .courseid {
+          font-weight: 600;
+        }
+        
+      .course-code {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+      }
+      .note-btn {
+        font-weight: 600;
+      }
+    }
+    
+    table {
+      td {
+        padding-top: 12px;
+      }
+      &.disabled {
+        opacity: 0.5;
+        a {
+          cursor: default;
+          &:hover {
+            text-decoration: none;
+            color: #2E2D29;
+          }
+        }
+      }
+    } 
+  
+
+    &.red-line {
+      border-left: 4px solid #FF9A9A;
+    }
+  
+  }
+}
+    .rmd-txt {
+      display: inline-block;
+      padding: 3px 6px;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--Tag, #FFE6E2);
+      color: var(--Primary-Maroon, #8C1515);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+    }
