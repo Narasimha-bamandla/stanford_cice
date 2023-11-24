@@ -1,3 +1,5 @@
+@import 'stanford_cice/colors';
+
 .Visualizer {
 	width: 400px;
 	margin: auto;
@@ -59,55 +61,55 @@
 			}
 
 			&.Enrolled {
-				background-color: #7CDB06;
+				background-color:  $enrolled-color;
 			}
 
 			&.Conflict {
-				background-color: #BB2625;
+				background-color:  $conflict-color;
 			}
 
 			&.Planned {
-				background-color: #F3A83B;
+				background-color:  $planned-color;
 			}
 
 			&.CoreArea1 {
-				background-color: #F073F2;
+				background-color:  $coreArea1-color;
 			}
 
 			&.CoreArea2 {
-				background-color: #FF9A9A;
+				background-color: $coreArea2-color;
 			}
 
 			&.CoreArea3 {
-				background-color: #7094FF;
+				background-color: $coreArea3-color;
 			}
 
 			&.CoreArea4 {
-				background-color: #A688E7;
+				background-color:  $coreArea4-color;
 			}
 
 			&.CoreArea5 {
-				background-color: #CAAD7D;
+				background-color:  $coreArea5-color;
 			}
 
 			&.CoreArea6 {
-				background-color: #4FCAFF;
+				background-color: $coreArea6-color;
 			}
 
 			&.CoreArea7 {
-				background-color: #FFE600;
+				background-color: $coreArea7-color;
 			}
 
 			&.CoreArea8 {
-				background-color: #FEB0FF;
+				background-color: $coreArea8-color;
 			}
 
 			&.CoreArea9 {
-				background-color: #99B3FF;
+				background-color: $coreArea9-color;
 			}
 
 			&.CoreArea10 {
-				background-color: #A3E3FF;
+				background-color: $coreArea10-color;
 			}
 		}
 
