@@ -1,0 +1,98 @@
+// Define your color variables
+@import "colors";
+  
+// Apply the styles with different sizes, states, types, and icon positions
+ 
+.sdtd-rcslider {
+	width: 100%;  
+ 
+   
+    .rc-slider-handle {
+        width: 16px   !important;
+		height: 16px !important;
+		flex-shrink: 0;
+		width: 100%;
+		border-radius: 12px;
+		border: 2px solid  $primary-maroon;
+		background: $white; 
+        cursor: pointer;
+        cursor: grab;
+        opacity: 0.8;
+        margin-top: -7px;
+        touch-action: pan-x;
+        &:active , &:hover{
+            border-color: $primary-maroon;
+            box-shadow: 0 0 5px $primary-maroon; 
+        }
+    } 
+    .rc-slider-rail { 
+        height: 2px;
+		background: $black-20-color;
+    }
+    .rc-slider-track, .rc-slider-tracks { 
+        height: 2px;
+        background-color: $primary-maroon; 
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 10px;
+            background: $white;
+            z-index: 1;
+            top: -5px;
+            bottom: 0;
+            border-radius: 50%;
+        }
+        &:after { 
+            right:0;
+        }
+    }
+    .rc-slider-handle-dragging {
+        border-color: $primary-maroon !important;
+        box-shadow: 0 0 5px $primary-maroon !important;
+    }
+    .clay-range-input {
+        .tooltip-inner { 
+            background: $bg-grey;
+			border: 1px solid  $black-20-color;
+        color: $white;
+		border-radius: 0;
+		color:$black-100-color; 
+		box-shadow: none;
+        }
+	.clay-tooltip-top {
+		.tooltip-arrow {
+			width: 0;
+			height: 0;
+			background: transparent;
+			border: 10px solid transparent ;
+			border-width: 10px 10px 10px;
+			border-color: transparent $black-20-color $black-20-color transparent;
+			z-index: -1;
+			margin-left: -10px; 
+		}
+	}
+	.tooltip {
+		margin-left: 0.475rem;
+	}
+	.form-control-range {
+		height: 16px;
+	}
+	.clay-range-thumb {
+		width: 16px   !important;
+		height: 16px !important;
+		flex-shrink: 0;
+		width: 100%;
+		border-radius: 12px;
+		border: 2px solid  $primary-maroon;
+		background: $white;
+		margin-top: -9px;
+	}
+	.clay-range-progress {
+		background-color: $primary-maroon;
+		height: 2px;
+	}
+
+}
+}
+ 

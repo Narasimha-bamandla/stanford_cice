@@ -29,7 +29,7 @@
   & .custom-control-input.sm  ~ .custom-control-label { 
     .custom-control-label-text { 
       line-height: 16px;
-      padding-left: 0;
+      padding-left: 8px;
    }
       &:before, &:after {
         @include radio-size (16px) 

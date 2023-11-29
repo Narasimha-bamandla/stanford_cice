@@ -1,356 +1,356 @@
-@import "colors";
+ @import "colors";
 
-.primary {
-  color: $primary-maroon;
-}
+ .primary {
+   color: $primary-maroon;
+ }
 
-.black {
-  color: $primary-balck;
-}
+ .black {
+   color: $primary-balck;
+ }
 
-.secondary {
-  color: $secondary-color;
-}
+ .secondary {
+   color: $secondary-color;
+ }
 
-.c20 {
-  color: $black-20-color;
-}
+ .c20 {
+   color: $black-20-color;
+ }
 
-.bg20 {
-  background-color: $black-20-color;
-}
+ .bg20 {
+   background-color: $black-20-color;
+ }
 
-.c60 {
-  color: $black-60-color;
-}
+ .c60 {
+   color: $black-60-color;
+ }
 
-.bg60 {
-  background-color: $black-60-color;
-}
+ .bg60 {
+   background-color: $black-60-color;
+ }
 
-.c80 {
-  color: $black-80-color;
-}
+ .c80 {
+   color: $black-80-color;
+ }
 
-.bg80 {
-  background-color: $black-80-color;
-}
+ .bg80 {
+   background-color: $black-80-color;
+ }
 
-.c100 {
-  color: $black-100-color;
-}
+ .c100 {
+   color: $black-100-color;
+ }
 
-.bg100 {
-  background-color: $black-100-color;
-}
-
-.enrolled-bg-color {
- background-color: $enrolled-color;
+ .bg100 {
+   background-color: $black-100-color;
+ }
+ 
+ .enrolled-bg-color {
+  background-color: $enrolled-color;
 }  
 .conflict-bg-color
- {
- background-color: $conflict-color;
+  {
+  background-color: $conflict-color;
 } 
 .planned-bg-color  {
- background-color: $planned-color;
+  background-color: $planned-color;
 }
 .preferences-bg-color  {
- background-color: $preferences-color;
+  background-color: $preferences-color;
 }
 
 .coreArea1-bg-color
- {
- background-color: $coreArea1-color;
+  {
+  background-color: $coreArea1-color;
 }
 .coreArea2-bg-color
- {
- background-color: $coreArea2-color;
+  {
+  background-color: $coreArea2-color;
 }
 .coreArea3-bg-color
- {
- background-color: $coreArea3-color;
+  {
+  background-color: $coreArea3-color;
 }
 .coreArea4-bg-color
-{
- background-color: $coreArea4-color;
+ {
+  background-color: $coreArea4-color;
 }
 .coreArea5-bg-color
- {
- background-color: $coreArea5-color;
+  {
+  background-color: $coreArea5-color;
 }
 .coreArea6-bg-color
-{
- background-color: $coreArea6-color;
+ {
+  background-color: $coreArea6-color;
 }
 .coreArea7-bg-color
- {
- background-color: $coreArea7-color;
+  {
+  background-color: $coreArea7-color;
 }
 .coreArea8-bg-color
-{
- background-color: $coreArea8-color;
+ {
+  background-color: $coreArea8-color;
 }
 .coreArea9-bg-color
- {
- background-color: $coreArea9-color;
+  {
+  background-color: $coreArea9-color;
 }
 .coreArea10-bg-color
- {
- background-color: $coreArea10-color;
+  {
+  background-color: $coreArea10-color;
 }
 .coreArea11-bg-color
- {
- background-color: $coreArea11-color;
+  {
+  background-color: $coreArea11-color;
 }
 .coreArea12-bg-color
- {
- background-color: $coreArea12-color;
+  {
+  background-color: $coreArea12-color;
 }
 .coreArea13-bg-color
- {
- background-color: $coreArea13-color;
+  {
+  background-color: $coreArea13-color;
 }
 .coreArea14-bg-color
- {
- background-color: $coreArea14-color;
+  {
+  background-color: $coreArea14-color;
 }
 
 .enrolled-color {
- color: $enrolled-color;
+  color: $enrolled-color;
 }  
 .conflict-color
- {
- color: $conflict-color;
+  {
+  color: $conflict-color;
 } 
 .planned-color  {
- color: $planned-color;
+  color: $planned-color;
 }
 .preferences-color  {
- color: $preferences-color;
+  color: $preferences-color;
 }
 
 .coreArea1-color
- {
- color: $coreArea1-color;
+  {
+  color: $coreArea1-color;
 }
 .coreArea2-color
- {
- color: $coreArea2-color;
+  {
+  color: $coreArea2-color;
 }
 .coreArea3-color
- {
- color: $coreArea3-color;
+  {
+  color: $coreArea3-color;
 }
 .coreArea4-color
-{
- color: $coreArea4-color;
+ {
+  color: $coreArea4-color;
 }
 .coreArea5-color
- {
- color: $coreArea5-color;
+  {
+  color: $coreArea5-color;
 }
 .coreArea6-color
-{
- color: $coreArea6-color;
+ {
+  color: $coreArea6-color;
 }
 .coreArea7-color
- {
- color: $coreArea7-color;
+  {
+  color: $coreArea7-color;
 }
 .coreArea8-color
-{
- color: $coreArea8-color;
+ {
+  color: $coreArea8-color;
 }
 .coreArea9-color
- {
- color: $coreArea9-color;
+  {
+  color: $coreArea9-color;
 }
 .coreArea10-color
- {
- color: $coreArea10-color;
+  {
+  color: $coreArea10-color;
 }
 .coreArea11-color
- {
- color: $coreArea11-color;
+  {
+  color: $coreArea11-color;
 }
 .coreArea12-color
- {
- color: $coreArea12-color;
+  {
+  color: $coreArea12-color;
 }
 .coreArea13-color
- {
- color: $coreArea13-color;
+  {
+  color: $coreArea13-color;
 }
 .coreArea14-color
- {
- color: $coreArea14-color;
+  {
+  color: $coreArea14-color;
 }
 
-@mixin font-style($color, $size, $weight, $lineheight) {
-  color: $color ;
-  font-size: $size;
-  font-style: normal;
-  font-weight: $weight;
-  line-height: $lineheight;
-  @if $weight == 600 { 
- } @else {
-   & strong {
-     font-weight: 600 !important;
+ @mixin font-style($color, $size, $weight, $lineheight) {
+   color: $color ;
+   font-size: $size;
+   font-style: normal;
+   font-weight: $weight;
+   line-height: $lineheight;
+   @if $weight == 600 { 
+  } @else {
+    & strong {
+      font-weight: 600 !important;
+    }
+  }
+
+ }
+
+ /* Heading/Heading 01 */
+ .h1,
+ h1 {
+   @include font-style($black-100-color, 36px !important, 600 !important, 40px !important)
+ }
+
+ /* Heading/Heading 02 */
+
+ .h2, h2 {
+   @include font-style($black-100-color, 28px !important, 600 !important, 32px !important)
+ }
+
+ /* Heading/Heading 02 */
+
+ .h3, h3 {
+   @include font-style($black-100-color, 24px !important, 600 !important, 28px !important)
+ }
+
+ /* Heading/Heading 04 */
+
+ .h4, h4 {
+   @include font-style($black-100-color, 20px !important, 600 !important, 24px !important)
+ }
+
+ /* Heading/Heading 05 */
+
+ .h5, h5 {
+   @include font-style($black-100-color, 18px !important, 600 !important, 24px !important)
+ }
+
+ /* Heading/Heading 06 */
+
+ .h6, h6 {
+   @include font-style($black-100-color, 16px !important, 600 !important, 16px !important)
+ }
+
+ /*  body 2 */
+ .body2 {
+   @include font-style($primary-balck, 16px, 400, 24px)
+ }
+
+ .body2b {
+   @include font-style($primary-balck, 16px, 600, 24px)
+ }
+
+ /* Body/Body 3 */
+ body,
+ li, p, span, label,
+ .body {
+   @include font-style($black-100-color, 14px, 400, 16px); 
+   a {
+     text-decoration: underline;
    }
  }
 
+ /* small,  body 3 */
+ .small,
+ .body3 {
+   @include font-style($black-80-color, 12px, 400, 120%);
+ }
+ .body3b {
+  @include font-style($black-80-color, 12px, 600, 120%);
 }
 
-/* Heading/Heading 01 */
-.h1,
-h1 {
-  @include font-style($black-100-color, 36px !important, 600 !important, 40px !important)
+ /*  body 4 */
+ .body4 {  
+   @include font-style($black-80-color, 11px, 400,  12px); 
+ }
+ .body4b {  
+  @include font-style($black-80-color, 11px, 600,  12px); 
 }
-
-/* Heading/Heading 02 */
-
-.h2, h2 {
-  @include font-style($black-100-color, 28px !important, 600 !important, 32px !important)
+ /*  body 5*/
+ .body5 {
+  @include font-style($black-60-color, 10px, 400,  12px); 
+ }
+ .body5b {
+  @include font-style($black-60-color, 10px, 600,  12px); 
+ }
+ /*  body 6*/
+ .body6 { 
+   @include font-style($black-80-color, 9px, 400,  12px);
+ }
+ .body6b { 
+  @include font-style($black-80-color, 9px, 600,  12px);
 }
+ /* achor link */
+ a {
+   color: $primary-maroon;
+   text-decoration-line: underline;
+ }
 
-/* Heading/Heading 02 */
+ /* Tag */
+ .tag {
+   & * {
+     color: $primary-maroon;
+     margin: 0;
+   }
 
-.h3, h3 {
-  @include font-style($black-100-color, 24px !important, 600 !important, 28px !important)
-}
+   background: $tag;
+   display: inline-flex;
+   padding: 8px 12px;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
+   flex-shrink: 0;
 
-/* Heading/Heading 04 */
+   &.fullwidth {
+     display: flex;
+   }
+ }
 
-.h4, h4 {
-  @include font-style($black-100-color, 20px !important, 600 !important, 24px !important)
-}
+ /* Timeline */
 
-/* Heading/Heading 05 */
+ .timeline {
+   margin: auto;
+   padding-left: 0;
+   text-align: left;
 
-.h5, h5 {
-  @include font-style($black-100-color, 18px !important, 600 !important, 24px !important)
-}
+   &.minHt60 {
+     .timeline-item {
+       min-height: 60px;
+     }
+   }
 
-/* Heading/Heading 06 */
+   .timeline-item {
+     padding-top: 0;
+     padding-bottom: 0;
 
-.h6, h6 {
-  @include font-style($black-100-color, 16px !important, 600 !important, 16px !important)
-}
+     .timeline-icon {
+       background: $tag;
+       border: 1px solid $tag
+     }
 
-/*  body 2 */
-.body2 {
-  @include font-style($primary-balck, 16px, 400, 24px)
-}
+     .panel {
+       .timeline-increment {
+         top: 2px;
+         transform: translate(-50%);
+       }
+     }
 
-.body2b {
-  @include font-style($primary-balck, 16px, 600, 24px)
-}
+     &:before {
+       bottom: -3px;
+       top: 2px;
+       background-color: $tag;
+     }
 
-/* Body/Body 3 */
-body,
-li, p, span, label,
-.body {
-  @include font-style($black-100-color, 14px, 400, 16px); 
-  a {
-    text-decoration: underline;
-  }
-}
-
-/* small,  body 3 */
-.small,
-.body3 {
-  @include font-style($black-80-color, 12px, 400, 120%);
-}
-.body3b {
- @include font-style($black-80-color, 12px, 600, 120%);
-}
-
-/*  body 4 */
-.body4 {  
-  @include font-style($black-80-color, 11px, 400,  12px); 
-}
-.body4b {  
- @include font-style($black-80-color, 11px, 600,  12px); 
-}
-/*  body 5*/
-.body5 {
- @include font-style($black-60-color, 10px, 400,  12px); 
-}
-.body5b {
- @include font-style($black-60-color, 10px, 600,  12px); 
-}
-/*  body 6*/
-.body6 { 
-  @include font-style($black-80-color, 9px, 400,  12px);
-}
-.body6b { 
- @include font-style($black-80-color, 9px, 600,  12px);
-}
-/* achor link */
-a {
-  color: $primary-maroon;
-  text-decoration-line: underline;
-}
-
-/* Tag */
-.tag {
-  & * {
-    color: $primary-maroon;
-    margin: 0;
-  }
-
-  background: $tag;
-  display: inline-flex;
-  padding: 8px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-
-  &.fullwidth {
-    display: flex;
-  }
-}
-
-/* Timeline */
-
-.timeline {
-  margin: auto;
-  padding-left: 0;
-  text-align: left;
-
-  &.minHt60 {
-    .timeline-item {
-      min-height: 60px;
-    }
-  }
-
-  .timeline-item {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    .timeline-icon {
-      background: $tag;
-      border: 1px solid $tag
-    }
-
-    .panel {
-      .timeline-increment {
-        top: 2px;
-        transform: translate(-50%);
-      }
-    }
-
-    &:before {
-      bottom: -3px;
-      top: 2px;
-      background-color: $tag;
-    }
-
-    &:last-child {
-      &:before {
-        display: none;
-      }
-    }
-  }
-}
+     &:last-child {
+       &:before {
+         display: none;
+       }
+     }
+   }
+ }
