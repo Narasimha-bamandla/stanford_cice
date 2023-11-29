@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Heading } from '@clayui/core';
 import ClayButton from '@clayui/button';
 import DropDown from '@clayui/drop-down';
@@ -6,7 +6,12 @@ import AngleDown from "../../assets/images/icons/angle_down_icon.svg";
 import FilterIcon from "../../assets/images/icons/filter_icon.svg";
 import UserIcon from "../../assets/images/icons/user_icon.svg"; 
 import ClayLayout from '@clayui/layout'; 
+import AdvancedFilters from './AdvancedFilters';
 const InfoBanner = () => {
+  const [showAdvFiltersPopup, setShowAdvFiltersPopup] = useState(0);
+  const handleShowAdvFiltersPopup = () => {
+    setShowAdvFiltersPopup((prevToggle) => (prevToggle === 0 ? 1 : 0));
+  };
   const sortbyitems = [
     {
       id: 1,
@@ -75,7 +80,7 @@ const InfoBanner = () => {
               )}
             </DropDown.ItemList>
           </DropDown>
-            <ClayButton className='filter-btn' displayType="secondary" size='sm'>
+            <ClayButton  onClick={handleShowAdvFiltersPopup} className='filter-btn' displayType="secondary" size='sm'>
               {"Advanced Filters"}   <span className="inline-item inline-item-after">
                 <img src={FilterIcon} />
               </span>
@@ -97,7 +102,9 @@ const InfoBanner = () => {
                 )}
               </DropDown.ItemList>
             </DropDown>   </div>
-        </div> </div>   </ClayLayout.Col></ClayLayout.Row></ClayLayout.ContainerFluid>
+        </div> </div>   </ClayLayout.Col></ClayLayout.Row>
+        {showAdvFiltersPopup ? <AdvancedFilters /> : ''}
+        </ClayLayout.ContainerFluid>
         </div>
   )
 }

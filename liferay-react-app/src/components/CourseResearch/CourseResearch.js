@@ -19,7 +19,7 @@ const CourseResearch = () => {
               <Courses />
             </ClayLayout.Col>
             <ClayLayout.Col size={4}   >
-              <div className='btns-right'> <span className='button btn btn-primary  '>  <span>View Your Study Plan</span>  </span> </div>
+              <div className='btns-right'> <button className="sdfd-btn sm-btn primary-btn">  View Your Study Plan  </button> </div>
               <Visualizer /> 
             </ClayLayout.Col>
             </ClayLayout.Row> 

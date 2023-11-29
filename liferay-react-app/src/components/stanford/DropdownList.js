@@ -5,7 +5,7 @@ import AngleDown from "../../assets/images/icons/angle_down_icon.svg";
 import {ClayRadio, ClayRadioGroup} from '@clayui/form';
 import ExternalLinkIcon from "../../assets/images/icons/outside_link_icon.svg";
 import ClayButton, { ClayButtonWithIcon } from '@clayui/button';
-function MultiSelectCheckboxList({ items }) {
+export function MultiSelectCheckboxList({ items }) {
   // Initialize state to keep track of the checked checkbox indices
   const [checkedItems, setCheckedItems] = useState([]);
 
@@ -58,7 +58,7 @@ function MultiSelectCheckboxList({ items }) {
   );
 }
  
-function RadioList({ items }) {
+export  function RadioList({ items }) {
   // Initialize state to keep track of the selected radio index
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -103,7 +103,7 @@ function RadioList({ items }) {
     </div>
   );
 }
-function SelectList({ items }) {
+export  function SelectList({ items }) {
   // Initialize state to keep track of the selected radio index
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -128,7 +128,7 @@ function SelectList({ items }) {
     </div>
   );
 }
-function MenuList({ items }) {
+export  function MenuList({ items }) {
   // Initialize state to keep track of the selected radio index
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -174,7 +174,7 @@ function MenuList({ items }) {
   );
 }
 
-function CheckboxList({ items }) {
+export  function CheckboxList({ items }) {
   // Initialize state to keep track of checked state for each item
   const [checkedItems, setCheckedItems] = useState(() =>
     items.reduce((acc, item, index) => {

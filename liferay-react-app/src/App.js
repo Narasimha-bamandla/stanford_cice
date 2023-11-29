@@ -31,7 +31,7 @@ import Swatches from './components/stanford/swatches';
 function App() {
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, width: 750, margin: '20px auto' }}>
+      {/* <div style={{ display: 'flex', flexDirection: 'column', gap: 20, width: 750, margin: '20px auto' }}>
 
       <h1>Rating bar</h1>
       <Rateingbar />
@@ -66,7 +66,8 @@ function App() {
         <div style={{ display: 'flex', flexDirection: 'column', padding: 20, gap: 20, border: '1px solid #ccc', borderRadius: 5, }}>
 
           <Buttons /></div>
-      </div>
+      </div> */}
+      <CourseResearch />
     </>
   );
 }
