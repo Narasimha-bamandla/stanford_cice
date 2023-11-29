@@ -22,6 +22,11 @@
   label {
     padding: 0;
   }
+  & .bold.custom-control-input + .custom-control-label { 
+      .custom-control-label-text {
+        font-weight: 600;
+     } 
+  }
   &.custom-checkbox {
     .custom-control-label-text {
       color:$black-80-color;
