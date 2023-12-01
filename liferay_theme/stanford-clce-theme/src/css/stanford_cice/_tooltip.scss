@@ -1,0 +1,24 @@
+ @import "colors";
+
+ .tooltip {
+    &.clay-tooltip-left .arrow:before {
+        border-left-color: $black-20-color; 
+    }
+    &.clay-tooltip-right .arrow:before {
+        border-right-color: $black-20-color; 
+    }
+    &.clay-tooltip-top .arrow:before {
+        border-top-color: $black-20-color; 
+    }
+    &.clay-tooltip-bottom .arrow:before {
+        border-bottom-color: $black-20-color; 
+    }
+     .tooltip-inner { 
+        padding:4px 12px;
+        color: $black-80-color;
+        text-align: left;
+        background-color: $bg-grey;
+        border-radius: 0;
+        border:1px solid $black-20-color;
+    }
+ }

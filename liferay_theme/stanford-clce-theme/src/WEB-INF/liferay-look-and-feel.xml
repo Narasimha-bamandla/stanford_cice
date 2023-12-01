@@ -7,7 +7,15 @@
 	</compatibility>
 	<theme id="stanford-clce-theme" name="Stanford CLCE Theme">
 		<template-extension>ftl</template-extension>
-		<settings>   
+		<settings>
+	
+		<setting configurable="true" key="show-header-title" type="checkbox" value="true"/>  
+			<setting configurable="true" key="header-title" type="text" value=""/>
+		<setting configurable="true" key="show-search" type="checkbox" value="true"/> 
+		<setting configurable="true" key="show-degree-progress" type="checkbox" value="true"/> 
+		<setting configurable="true" key="show-my-notes" type="checkbox" value="true"/> 
+		<setting configurable="true" key="show-wishlist" type="checkbox" value="true"/> 
+		 
  			<setting configurable="true" key="ga-script" type="textarea" value=""/>
 		</settings>
 		<portlet-decorator id="borderless" name="Borderless">

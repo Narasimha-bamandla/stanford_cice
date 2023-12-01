@@ -187,11 +187,14 @@
 }
 
  @mixin font-style($color, $size, $weight, $lineheight) {
-   color: $color ;
+   
    font-size: $size;
    font-style: normal;
    font-weight: $weight;
    line-height: $lineheight;
+   @if $color != '' { 
+    color: $color ;
+  }  
    @if $weight == 600 { 
   } @else {
     & strong {
@@ -250,7 +253,7 @@
  body,
  li, p, span, label,
  .body {
-   @include font-style($black-100-color, 14px, 400, 16px); 
+   @include font-style('', 14px, 400, 16px); 
    a {
      text-decoration: underline;
    }
@@ -354,3 +357,5 @@
      }
    }
  }
+
+ 
