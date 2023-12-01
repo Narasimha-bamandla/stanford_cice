@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Heading } from '@clayui/core';
 import ClayButton from '@clayui/button';
 import DropDown from '@clayui/drop-down';import ClayLayout from '@clayui/layout'; 
-
-export default class extends React.Component {
-  render() {
+import AdvancedFilters from './AdvancedFilters';
+const InfoBanner = () => {
+  const [showAdvFiltersPopup, setShowAdvFiltersPopup] = useState(0);
+  const handleShowAdvFiltersPopup = () => {
+    setShowAdvFiltersPopup((prevToggle) => (prevToggle === 0 ? 1 : 0));
+  }; 
     const sortbyitems = [
       {
         id: 1,
@@ -73,11 +76,11 @@ export default class extends React.Component {
                       )}
                     </DropDown.ItemList>
                   </DropDown>
-                  <ClayButton className='filter-btn' displayType="secondary" size='sm'>
-                    {"Advanced Filters"}   <span className="inline-item inline-item-after">
-                      <img src={'/o/stanford-clce-theme/images/icons/filter_icon.svg'} />
-                    </span>
-                  </ClayButton>     </div>
+                  <ClayButton  onClick={handleShowAdvFiltersPopup} className='filter-btn secondary-btn'   size='sm'>
+              {"Advanced Filters"}   <span className="inline-item inline-item-after">
+              <img src={'/o/stanford-clce-theme/images/icons/filter_icon.svg'} />
+              </span>
+            </ClayButton>        </div>
                 <div className='right_col'>
                   <DropDown trigger={<ClayButton size='sm' displayType={null}>Sort by <span className="inline-item inline-item-after">
                     <img src={'/o/stanford-clce-theme/images/icons/angle_down_icon.svg'} />
@@ -95,9 +98,12 @@ export default class extends React.Component {
                       )}
                     </DropDown.ItemList>
                   </DropDown>   </div> </div>
-              </div></ClayLayout.Col></ClayLayout.Row></ClayLayout.ContainerFluid>
+              </div></ClayLayout.Col></ClayLayout.Row>
+              {showAdvFiltersPopup ? <AdvancedFilters /> : ''}
+              </ClayLayout.ContainerFluid>
       </div>
-    )
-  }
+    ) 
 }
 
+
+export default InfoBanner;
