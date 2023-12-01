@@ -281,7 +281,7 @@
 @import "stanford_cice/slider";
 @import "stanford_cice/vcevents";
 @import "stanford_cice/ratingbar";
-@import 'stanford_cice/advancedfilters';
+@import 'stanford_cice/advancedfilters'; 
 @import 'stanford_cice/rc_slider';
 @import 'stanford_cice/tooltip';
 
@@ -289,7 +289,10 @@
 #wrapper {
   padding-top: 0;
 }
-
+div[id*="js-portlet-_LiferayReactJsPortlet_INSTANCE"] {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .portlet-header {
   display: none;
 }
