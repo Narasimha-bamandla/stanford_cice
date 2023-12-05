@@ -1,4 +1,5 @@
-@import 'CourseResearch.scss'; 
+@import 'stanford_cice/CourseResearch.scss'; 
+@import 'stanford_cice/CourseDetails.scss';
 @import 'stanford_cice/buttons';
 @import 'stanford_cice/tabs';
 @import 'stanford_cice/common';
@@ -11,6 +12,7 @@
 @import 'stanford_cice/ratingbar';
 @import 'stanford_cice/advancedfilters';
 @import 'stanford_cice/rc_slider';
+@import 'stanford_cice/link_card';
 
 .App {
   text-align: center;

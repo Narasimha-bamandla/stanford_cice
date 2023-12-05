@@ -26,6 +26,7 @@ import Slider from './components/stanford/slider';
 import EventsList from './components/stanford/vcevents';
 import Rateingbar from './components/stanford/ratingbar';
 import Swatches from './components/stanford/swatches';
+import CourseDetails from './components/CourseDetails/CourseDetails';
 
 
 function App() {
@@ -67,7 +68,9 @@ function App() {
 
           <Buttons /></div>
       </div> */}
-      <CourseResearch />
+      {/* <CourseResearch /> */}
+
+      <CourseDetails />
     </>
   );
 }

@@ -1,0 +1,56 @@
+@import 'colors'; 
+@import 'CourseInfo.scss';
+@import 'Helplinks.scss';
+@import 'CourseSections.scss';
+@import 'RatingsPanel.scss';
+@import 'CourseComments.scss';
+@import 'pagination';
+
+.course-details {
+    padding:20px;
+    display: flex;
+    width: 100%; 
+   .col-left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 950px;
+        max-width: 100%;
+   }
+
+   .col-left {
+      flex:1,
+   }
+    .course_overview {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 950px;
+        .body2 {
+            color: $black-color-3;
+        }
+       
+    }
+    .student_course_evaluations {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 950px;
+        max-width: 100%;
+       }
+    .course_quick_links {
+        list-style: none;
+        .nav-link {
+            display: flex;
+            padding: 6px 8px;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border:none;
+        }
+    }
+
+}
