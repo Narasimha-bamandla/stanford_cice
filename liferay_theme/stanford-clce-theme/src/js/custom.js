@@ -5,6 +5,7 @@
             var dropdown = event.currentTarget.next('.dropdown-menu');
             dropdown.toggleClass('show');
         }, '.dropdown-toggle');
-    });
-});
+        
+    }); 
+}); 
 

@@ -1,5 +1,8 @@
  @import "colors";
 
+ html {
+  scroll-behavior: smooth;
+} 
  .primary {
    color: $primary-maroon;
  }
@@ -187,14 +190,11 @@
 }
 
  @mixin font-style($color, $size, $weight, $lineheight) {
-   
+   color: $color ;
    font-size: $size;
    font-style: normal;
    font-weight: $weight;
    line-height: $lineheight;
-   @if $color != '' { 
-    color: $color ;
-  }  
    @if $weight == 600 { 
   } @else {
     & strong {
@@ -203,7 +203,9 @@
   }
 
  }
-
+ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
+  margin: 0 !important;
+}
  /* Heading/Heading 01 */
  .h1,
  h1 {
@@ -253,7 +255,7 @@
  body,
  li, p, span, label,
  .body {
-   @include font-style('', 14px, 400, 16px); 
+   @include font-style($black-100-color, 14px, 400, 16px); 
    a {
      text-decoration: underline;
    }
@@ -294,7 +296,15 @@
    color: $primary-maroon;
    text-decoration-line: underline;
  }
-
+ a.grey-link {
+  color: $black-100-color;
+  text-decoration-line: underline;
+}
+ /* Horizontal Line */
+hr { 
+  stroke-width: 1px;
+stroke: $black-20-color
+} 
  /* Tag */
  .tag {
    & * {
@@ -309,7 +319,12 @@
    align-items: center;
    gap: 12px;
    flex-shrink: 0;
-
+   &.sm {
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: middle;
+   }
    &.fullwidth {
      display: flex;
    }
@@ -358,4 +373,31 @@
    }
  }
 
+ /* Star */
+
+ .stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px !important;
+    .star {
+      width:12px;
+      height: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('/o/stanford-clce-theme/images/icons/star_inactive_icon.svg');
+      &.full:before, &.half:before {
+        position: absolute;
+        content: ""; 
+        background-image: url('/o/stanford-clce-theme/images/icons/star_active_icon.svg');
+        height: 12px;
+      } 
+      &.full:before { 
+        width:12px;
+
+      } 
+      &.half:before {
+        width:6px; 
+      } 
+  }
+}
  

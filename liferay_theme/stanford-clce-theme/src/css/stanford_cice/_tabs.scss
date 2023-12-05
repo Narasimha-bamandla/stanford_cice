@@ -2,7 +2,12 @@
 
 
 
- .sdfd-tabs {
+ .sdfd-tabs { 
+   &.mw148 {
+    .nav-item .nav-link {
+      min-width: 148px;
+    }
+  }
   &.fullwidth { 
     align-items: stretch;
     & .nav-item,  & .nav-link {  flex: 1; }
@@ -36,7 +41,18 @@
      }
 
    }
-
+   &.achor-tabs {
+    & .nav-item ,
+    & .nav-link { 
+      height: auto;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    & .nav-item.active .nav-link { 
+      background: $bg-grey; 
+      font-weight: 600;
+    }
+   }
    &.hline-tabs {
     gap: 0 !important;
      & .nav-item {  
@@ -52,7 +68,20 @@
       }
      }
    }
-
+   &.top-round {
+    & .nav-item {
+      & .nav-link {
+        border-radius:  6px 6px 0px 0px;
+      }
+    }  
+   }
+   &.fill-tabs.border-bottom-none {
+    & .nav-item {
+      & .nav-link {
+        border-bottom:  none !important;
+      }
+    }  
+   }
    &.fill-tabs {
      & .nav-item {
       padding-bottom: 2px;

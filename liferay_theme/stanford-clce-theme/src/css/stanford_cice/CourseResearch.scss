@@ -1,0 +1,170 @@
+
+@import 'infoBanner.scss';
+@import 'CoreCourseArea.scss';
+@import 'Visualizer.scss';
+@import 'CourseList.scss';
+@import 'MyNotesList.scss';
+
+.tabs-action-items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+  }
+  
+  .action-items {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  max-width: 100%;
+	  flex: auto;
+	  .custom-control {
+		  margin-bottom: 0;
+	  }
+  }
+  
+  ul.nav.nav-tabs {
+	display: flex;
+	gap: 12px;
+  }
+  
+  .nav-tabs .nav-link {
+	padding: 8px 20px !important;
+	font-size: 16px;
+	border: 1px solid  $black-20-color !important;
+	min-width: 160px;
+	height: 36px;
+	text-align: center;
+	line-height: 15px;
+  }
+  
+  .btns-right {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 24px;
+	  span.button.btn.btn-primary {
+		font-size: 16px;
+		padding: 5px 16px;
+		height: 36px;
+	}
+  }
+.courses.tab-content .tab-pane {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+	padding: 24px 0 !important;
+  
+  }
+  
+  .courses.tab-content .tab-pane.active {
+	display: flex;
+  }
+  
+  
+.content-area {
+	display: flex;
+	padding: 20px 0;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	max-width: 100%;
+  }
+.tab-btn.btn {
+	background: $white;
+	color: $secondary-default-color;
+	font-size: 16px;
+	font-weight: 600;
+  }
+  
+  .tab-btn.btn.active {
+	background: $secondary-default-color;
+	color: $white;
+  }
+  
+  .nav-tabs {
+	padding: 0 !important;
+	border: none !important;
+  }
+  
+  .nav-tabs li.nav-item.nobdr,
+  .nav-tabs li.nav-item.nobdr .btn {
+	border-style: none !important;
+	font-size: 14px;
+  }
+  
+  .nav-tabs li.nav-item.nobdr .btn {
+	bottom: 1px;
+	position: relative;
+  }
+  
+  .nav-tabs li.nav-item.btns .tab-btn.btn {
+	background: $white;
+	color: $secondary-default-color;
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid $black-20-color;
+  }
+  
+  .nav-tabs li.nav-item.btns .btn.active {
+	background: $secondary-default-color;
+	color: $white;
+  }
+  
+  .infobar {
+	display: flex;
+	padding: 8px 16px;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid $black-20-color;
+	background: $bg-grey;
+	margin-bottom: 8px;
+	font-size: 14px;
+  }
+   
+  
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border: 1px solid $black-20-color;
+  background:$white;
+  box-shadow: 0px 1px 4px 0px rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+}
+
+.filter-btn.btn {
+    background-color: $white;
+    border-color: $grey-color-2;
+    color: $grey-color-3;
+	line-height: 1.15;
+    padding: 8px 16px; 
+	line-height: 20px;
+	height: 36px;
+	width:176px;
+}
+.filter-btn.btn:hover,
+.btn.btn-primary.active:hover,
+.btn.btn-primary:hover {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: $white;
+}
+
+.filter-btn.btn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+
+
+.toggle-btn {
+	img {
+		transition: all 0.75s 0.25s;
+		transform: rotate(180deg);
+	}
+	&.active {
+		img {
+			transform: rotate(0);
+		}
+	}
+}

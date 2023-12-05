@@ -269,8 +269,8 @@
 
 /* close :root */
 
-@import 'CourseResearch.scss';
-
+@import 'stanford_cice/CourseResearch.scss';
+@import 'stanford_cice/CourseDetails.scss';
 @import "stanford_cice/buttons";
 @import "stanford_cice/tabs";
 @import "stanford_cice/common";
@@ -284,7 +284,8 @@
 @import 'stanford_cice/advancedfilters'; 
 @import 'stanford_cice/rc_slider';
 @import 'stanford_cice/tooltip';
-
+@import 'stanford_cice/link_card';
+@import 'stanford_cice/header';
 
 #wrapper {
   padding-top: 0;
@@ -356,12 +357,12 @@ div[id*="js-portlet-_LiferayReactJsPortlet_INSTANCE"] {
 
 
 a {
-  color: #8C1515;
+  color: $primary-maroon;
 }
 
 a:hover,
 a.hover {
-  color: #8C1515;
+  color: $primary-maroon;
   text-decoration: underline;
 }
 
@@ -391,12 +392,12 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 
 
 .OverallJourney .timeline-item:before {
-  background-color: #FFE6E2;
+  background-color: $tag;
 }
 
 .OverallJourney .timeline-icon {
-  background-color: #FFE6E2;
-  border: 2px solid #FFE6E2;
+  background-color: $tag;
+  border: 2px solid $tag;
   height: 12px;
   line-height: 12px;
   width: 12px;
@@ -407,16 +408,16 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 }
 
 .OverallJourney .btn-primary {
-  background-color: #8C1515;
-  border-color: #8C1515;
+  background-color: $primary-maroon;
+  border-color: $primary-maroon;
   border-radius: 0;
   font-size: 16px;
   font-weight: 600;
 }
 
 .OverallJourney .btn-primary:hover {
-  background-color: #00548F;
-  border-color: #00548F;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 }
 
 .OverallJourney .card-title {
@@ -436,7 +437,7 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 
 .OverallJourney .card {
   box-shadow: none;
-  border: 2px solid #D5D5D4;
+  border: 2px solid $disabled-color;
   position: relative;
   padding: 40px 60px 37px 60px;
 }
@@ -447,7 +448,7 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 
 .OverallJourney .card::before {
   height: 6px;
-  background: #D5D5D4;
+  background: $disabled-color;
   top: 0;
   position: absolute;
   content: " ";
@@ -508,8 +509,8 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
   left: -36px;
   top: 24px;
   position: absolute;
-  background-color: #ffe6e2;
-  color: #8C1515;
+  background-color: $tag;
+  color: $primary-maroon;
   padding: 8px 12px;
   font-size: 16px;
 }
@@ -519,7 +520,7 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 }
 
 .OverallJourney .steps_alert>h4 {
-  background: #FFE6E2;
+  background: $tag;
   display: flex;
   width: 886px;
   height: 50px;
@@ -529,7 +530,7 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
   gap: 12px;
   flex-shrink: 0;
   margin: auto;
-  color: #8C1515;
+  color: $primary-maroon;
 
   font-style: normal;
   font-weight: 600;
@@ -537,223 +538,6 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
   font-size: 20px;
 }
 
-/* header */
-.header-section {
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
-  padding: 22px 0;
-  background: #fff;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  right: 0;
-  left: 0;
-  margin: 0;
-
-  &.sticky {
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .header-right {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-
-  .logo-area {
-    display: flex;
-    gap: 16px;
-    justify-content: flex-start;
-    align-items: center;
-
-    .vline {
-      width: 1px;
-      height: 34px;
-      background: #D5D5D4;
-    }
-
-    .header-title {
-      color: var(--Black-100, #2E2D29);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 24px;
-    }
-  }
-
-  .grp-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    button.icon-btn.btn {
-      height: auto;
-      padding: 0;
-      line-height: normal;
-
-      img {
-        width: 24px;
-        height: 24px;
-        max-width: 24px;
-        max-height: 24px;
-      }
-    }
-  }
-
-  .search-box {
-    display: flex;
-    border: 1px solid $black-20-color;
-
-    .DropdownList {
-      position: relative;
-    }
-
-    .DropdownList.SelectList .dropdown-menu.show {
-      min-width: 96px;
-    }
-
-    button.dropdown-toggle.btn {
-      width: 96px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: none;
-      border-right: 1px solid $black-20-color;
-    }
-
-    .dropdown-menu .dropdown-item {
-      border-top: none;
-    }
-
-    .dropdown {
-      border: none;
-    }
-
-    .search-input {
-      display: flex;
-      gap: 12px;
-      width: -webkit-fill-available;
-      font-size: 14px;
-
-      input {
-        width: -webkit-fill-available;
-        border: none;
-        padding: 10px 15px;
-        outline: none;
-      }
-
-      button {
-        border-radius: 0 !important;
-        outline: none;
-        width: 50px !important;
-      }
-
-      .btn {
-        padding: 0;
-        display: flex;
-
-        img {
-          width: 12px;
-          height: 12px;
-        }
-      }
-
-    }
-
-  }
-
-  .dropdown-menu {
-    font-size: 12px;
-    border-top: 1px solid #D5D5D4;
-    padding: 0;
-
-    li {
-      &:first-child {
-        .dropdown-item {
-          border-top: none;
-        }
-      }
-    }
-
-    .dropdown-item {
-      padding: 12px 16px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      font-size: 12px;
-      border-top: 1px solid #D5D5D4;
-    }
-
-    .dropdown-item:active {
-      color: #16181b !important;
-    }
-
-    &::after {
-      padding: 0;
-    }
-  }
-
-  .dropdown-item {
-    &:hover {
-      background-color: #fff3f1;
-    }
-  }
-
-  .dropdown-item.hover {
-    background-color: #fff3f1;
-    color: #8C1515;
-  }
-
-  .howto-btn {
-    border: 1px solid #272833 !important;
-    border-radius: 0px;
-    background: #fff !important;
-    color: #272833;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    &:hover {
-      background: #00548F !important;
-      border-color: #00548F !important;
-      color: #fff !important;
-
-      img {
-        filter: brightness(0) invert(1);
-      }
-    }
-  }
-
-  .howto-btn {
-    border: 1px solid #272833;
-    border-radius: 0px;
-    background: #fff !important;
-    color: #272833;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    &:hover {
-      background: #00548F !important;
-      border-color: #00548F !important;
-      color: #fff !important;
-
-      img {
-        filter: brightness(0) invert(1);
-      }
-    }
-  }
-
-  div#profile-dropdown-menu {
-    margin-left: -69px;
-    min-width: inherit;
-  }
-}
 
 
 
@@ -774,7 +558,7 @@ section[id*="portlet_LiferayReactJsPortlet"] .portlet-content {
 
 
 .breadcrumb .breadcrumb-item.active {
-  color: #8C1515;
+  color: $primary-maroon;
 }
 
 
@@ -794,8 +578,8 @@ h2 {
 }
 
 .btn.btn-primary {
-  background: var(--Primary-Maroon, #8C1515);
-  border-color: var(--Primary-Maroon, #8C1515);
+  background:  $primary-maroon ;
+  border-color:   $primary-maroon ;
 }
 
 .dropdown.profile-btn {

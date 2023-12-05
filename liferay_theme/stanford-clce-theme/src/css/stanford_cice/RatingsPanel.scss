@@ -1,0 +1,35 @@
+@import 'colors';
+
+.ratings_panel {
+    background-color: $bg-grey;
+    display: flex;
+    width: 949px;
+    padding: 20px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px; 
+    .sorting {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+    .ratings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+    .name {
+        flex:1;
+    }
+    .rating {
+        width:30px;
+    }
+}

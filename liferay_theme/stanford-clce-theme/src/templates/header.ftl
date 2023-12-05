@@ -1,42 +1,37 @@
-<div id="header" class="header-section row justify-content-center">
-     <div align="left" class="col-3">
+
+<#assign theme_display = themeDisplay /> 
+<#if theme_display.isSignedIn()>
+    <#assign user = theme_display.user /> 
+</#if>
+<div id="header" class="header-section   "> 
           <div class="logo-area"> <a class="${logo_css_class}" href="${site_default_url}"
                     title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
                <img alt="Go to Home" src="${site_logo}" />
-               </a>
-
+               </a> 
                <#if showHeaderTitle>
                     <div class="vline"></div>
                     <div class="header-title">${headerTitle}</div>
-               </#if>
-
-          </div>
-     </div>
-     <div align="right" class="col-5">
+               </#if> 
+          </div> 
           <#if showSearch>
                <#include "${full_templates_path}/search.ftl" />
-          </#if>
-     </div>
-     <div align="right" class="col-4">
+          </#if> 
           <div class="header-right">
                <div class="grp-btns">   
                     <#if showDegreePprogress> 
                               <button title="Degree Progress" class="icon-btn btn lfr-portal-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"  data-title="Degree Progress" ><img
                                         src="${images_folder}/icons/edu_icon.svg">
-                              </button> 
-                              
+                              </button>  
                     </#if>
                     <#if showMyNotes>  
                               <button class="icon-btn btn lfr-portal-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-title="My Notes"><img
                                         src="${images_folder}/icons/note_fill_icon.svg">
-                              </button> 
-                                
+                              </button>  
                     </#if>
                     <#if showWishlist> 
                               <button class="icon-btn btn lfr-portal-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"  data-title="Wishlist" ><img
                                         src="${images_folder}/icons/fav_fill_icon.svg">
                               </button> 
- 
                     </#if>
                </div>  
                 <button class="sdfd-btn sm-btn secondary-btn lfr-portal-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"    data-title="Learn more about the *current page name* and its function on How to" type="button">
@@ -52,11 +47,10 @@
                               </clipPath>
                          </defs>
                     </svg>
-                    How To </button>  
-                   
+                    How To </button>   
                <div class="DropdownList NavDropdownMenu  dropdown   dropdown-btn"> <button class="dropdown-toggle btn"
                          type="button" aria-controls="menulist-dropdown-menu" aria-expanded="false" aria-haspopup="true"
-                         active="0">John Doe <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                         active="0"> ${user.fullName}   <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path d="M3.19995 6.40039L7.99995 11.2004L12.8 6.40039" stroke="currentColor"
                                    stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel"></path>
@@ -95,19 +89,14 @@
                                         </svg>GSB Registration</a></div>
                          </div>
                     </div>
-               </div>
-          </div>
+               </div> 
      </div>
 </div>
  
 <script>
 
-     jQuery(document).ready(function () {
-     
- 
-        
-          window.onscroll = function () { stickyHeader() };
-
+     jQuery(document).ready(function () { 
+          window.onscroll = function () { stickyHeader() }; 
           function stickyHeader() {
                const htmlElement = document.querySelector(':root')
                let header = document.getElementById("header");

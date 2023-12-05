@@ -1,0 +1,239 @@
+@import 'colors';
+
+.Visualizer {
+	width: 400px;
+	margin: auto;
+	border: 1px solid $disabled-color;
+	padding-bottom: 24px;
+	max-width: 100%;
+
+	a {
+		text-decoration: underline;
+	}
+
+	.weeks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+
+		.btn {
+			border-radius: 0;
+			background-color: $white;
+			border: 1px solid $disabled-color;
+			color: $secondary-default-color;
+			font-size: 10px;
+			width: 56px;
+			padding: 6px 5px;
+
+			&.active {
+				background-color: $disabled-color;
+				color: $secondary-default-color;
+				border: 1px solid $disabled-color;
+				opacity: 1;
+			}
+		}
+	}
+
+	.viz_cal {
+		.event {
+			background-color: $coreArea10-color;
+			border-radius: 2px;
+			width: 67px;
+			height: 61px;
+			position: relative;
+			padding: 6px;
+			cursor: pointer;
+			border: 1.5px solid $white;
+			font-size: 9px;
+			text-align: left;
+			color: $secondary-default-color;
+			max-width: 100%;
+
+			&:hover {
+				border: 1.5px solid $secondary-color;
+				box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.20), 0px 0px 10px 0px rgba(0, 40, 68, 0.40);
+			}
+
+			img {
+				position: absolute;
+				right: 5px;
+				bottom: 5px;
+			}
+
+			&.Enrolled {
+				background-color: $enrolled-color;
+			}
+
+			&.Conflict {
+				background-color: $conflict-color;
+			}
+
+			&.Planned {
+				background-color: $planned-color;
+			}
+
+			&.CoreArea1 {
+				background-color: $coreArea1-color;
+			}
+
+			&.CoreArea2 {
+				background-color: $coreArea2-color;
+			}
+
+			&.CoreArea3 {
+				background-color: $coreArea3-color;
+			}
+
+			&.CoreArea4 {
+				background-color: $coreArea4-color;
+			}
+
+			&.CoreArea5 {
+				background-color: $coreArea5-color;
+			}
+
+			&.CoreArea6 {
+				background-color: $coreArea6-color;
+			}
+
+			&.CoreArea7 {
+				background-color: $coreArea7-color;
+			}
+
+			&.CoreArea8 {
+				background-color: $coreArea8-color;
+			}
+
+			&.CoreArea9 {
+				background-color: $coreArea9-color;
+			}
+
+			&.CoreArea10 {
+				background-color: $coreArea10-color;
+			}
+		}
+
+		table {
+			&.cal {
+				width: 100%;
+				color: $black-80-color;
+				font-size: 9px;
+				border-collapse: collapse;
+
+				tr {
+					&:first-child {
+						td {
+							border: none;
+							font-weight: 600;
+							height: 20px;
+							text-align: center;
+						}
+					}
+				}
+
+				td {
+					border: 1px solid $disabled-color;
+					width: 68px;
+					height: 40px;
+					vertical-align: top;
+
+					&:first-child {
+						border: none;
+						width: 30px;
+					}
+				}
+
+				.btn {
+					color: $black-80-color;
+					font-size: 9px;
+					background-color: transparent;
+					padding: 0;
+					border-color: $white;
+				}
+			}
+		}
+	}
+
+	.weeks {
+		.btn {
+			&.active {
+				&:hover {
+					background-color: $secondary-color;
+					border-color: $secondary-color;
+					color: $white;
+				}
+			}
+
+			&:hover {
+				background-color: $secondary-color;
+				border-color: $secondary-color;
+				color: $white;
+			}
+		}
+	}
+
+	.Legends {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 5px;
+		padding-top: 16px;
+		margin-bottom: 16px;
+
+		&.col {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: -10px;
+		}
+
+		.box {
+			border-radius: 2px;
+			padding: 2px 4px;
+			font-size: 12px;
+			line-height: normal;
+		}
+
+		.text-2 {
+			font-size: 11px;
+		}
+	}
+
+	.Enrolled {
+		background-color: $enrolled-color;
+	}
+
+	.Conflict {
+		background-color: $conflict-color;
+		color: $white;
+	}
+
+	.LegendIcons {
+		padding: 6px;
+		width: 24px;
+		height: 24px;
+		line-height: 10px;
+	}
+
+	.LegendIcons img {
+		width: 12px;
+	}
+
+	
+
+}
+
+.clay-tooltip-top {
+	.tooltip-inner {
+		background-color: $white;
+		color: $black-80-color;
+		max-width: 180px;
+		padding: 8px 12px;
+		border-radius: 8px;
+		border: 1px solid $disabled-color;
+	}
+}
+.clay-tooltip-top .arrow::before,
+.clay-tooltip-top-left .arrow::before,
+.clay-tooltip-top-right .arrow::before {
+	border-top-color: $disabled-color !important;
+}
