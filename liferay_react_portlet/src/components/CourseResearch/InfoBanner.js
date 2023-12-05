@@ -76,7 +76,7 @@ const InfoBanner = () => {
                       )}
                     </DropDown.ItemList>
                   </DropDown>
-                  <ClayButton  onClick={handleShowAdvFiltersPopup} className='filter-btn secondary-btn' displayType="info"   size='sm'>
+                  <ClayButton  onClick={handleShowAdvFiltersPopup} className='filter-btn secondary-btn' displayType="info"  size='sm'>
               {"Advanced Filters"}   <span className="inline-item inline-item-after">
               <img src={'/o/stanford-clce-theme/images/icons/filter_icon.svg'} />
               </span>
